@@ -39,7 +39,8 @@ bool PauseScene::init()
     this->addChild(m_pLayer);
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    
+    float scale = 1.0f / Director::getInstance()->getContentScaleFactor();
+
     auto sprite = Sprite::create("PauseScene.PNG");
     sprite->setPosition(Point(visibleSize.width/2, visibleSize.height/2));
     m_pLayer->addChild(sprite, 0);
@@ -49,21 +50,21 @@ bool PauseScene::init()
                                               "transparentbutton.png",
                                               CC_CALLBACK_1(PauseScene::menuResumeCallback, this));
     
-    btn1->setPosition(Point(-50,-70));
+    btn1->setPosition(Point(-50,-70)*scale);
     
     auto btn2 = MenuItemImage::create(
                                       "transparentbutton.png",
                                       "transparentbutton.png",
                                       CC_CALLBACK_1(PauseScene::menuRestartCallback, this));
     
-    btn2->setPosition(Point(-10,-230));
+    btn2->setPosition(Point(-10,-230)*scale);
     
     auto btn3 = MenuItemImage::create(
                                       "transparentbutton.png",
                                       "transparentbutton.png",
                                       CC_CALLBACK_1(PauseScene::menuMainMenuCallback, this));
     
-    btn3->setPosition(Point(30,-350));
+    btn3->setPosition(Point(30,-350)*scale);
     
     // create menu, it's an autorelease object
     auto menu = Menu::create(btn1,btn2, btn3, NULL);
