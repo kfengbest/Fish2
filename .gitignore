@@ -1,0 +1,12 @@
+.DS_Store
+proj.ios_mac/Fish.xcodeproj/project.xcworkspace/contents.xcworkspacedata
+proj.ios_mac/Fish.xcodeproj/project.xcworkspace/xcuserdata/*
+proj.ios_mac/Fish.xcodeproj/project.xcworkspace/*
+proj.ios_mac/Fish.xcodeproj/xcuserdata/*
+proj.win32/Debug.win32/*
+proj.win32/Fish.sdf
+proj.win32/Fish.v11.suo
+proj.win32/Fish.IsolatorCache
+proj.win32/Fish.opensdf
+proj.win32/Debug.win32/Fish.vcxproj.user
+proj.win32/Release.win32/*
