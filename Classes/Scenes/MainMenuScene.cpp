@@ -7,6 +7,7 @@
 //
 
 #include "MainMenuScene.h"
+USING_NS_CC;
 
 MainMenuScene* MainMenuScene::create()
 {
@@ -33,8 +34,16 @@ MainMenuScene::~MainMenuScene()
 
 bool MainMenuScene::init()
 {
-    m_pLayer = cocos2d::Layer::create();
+    m_pLayer = cocos2d::LayerColor::create(cocos2d::Color4B(255,0,0,255));
     this->addChild(m_pLayer);
+    
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+    Point origin = Director::getInstance()->getVisibleOrigin();
+    
+    auto sprite = Sprite::create("mainmenuscenebg.png");
+    sprite->setPosition(Point(visibleSize.width/2, visibleSize.height/2));
+    
+    m_pLayer->addChild(sprite, 0);
     
     return true;
 }
