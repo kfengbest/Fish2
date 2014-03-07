@@ -1,0 +1,204 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup>
+    <Filter Include="win32">
+      <UniqueIdentifier>{84a8ebd7-7cf0-47f6-b75e-d441df67da40}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes">
+      <UniqueIdentifier>{bb6c862e-70e9-49d9-81b7-3829a6f50471}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource">
+      <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Naga2D">
+      <UniqueIdentifier>{331d21fc-44d5-4ae7-8c9b-d89809d09480}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\Joystick">
+      <UniqueIdentifier>{28ca7fdc-bd5e-4aa8-b115-3f4a0bd63836}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="Classes\Scenes">
+      <UniqueIdentifier>{8057c74d-84e8-4163-b3ca-3e2161a0e0b7}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\ParallaxBackgrounds">
+      <UniqueIdentifier>{87ea6cbc-9968-4693-8098-f2add4d02d98}</UniqueIdentifier>
+    </Filter>
+    <Filter Include="resource\TileMaps">
+      <UniqueIdentifier>{876a5efa-396f-4693-b74e-de0ee31d16b7}</UniqueIdentifier>
+    </Filter>
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="main.cpp">
+      <Filter>win32</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\AppDelegate.cpp">
+      <Filter>Classes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Joystick.cpp">
+      <Filter>Naga2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\JoystickLayer.cpp">
+      <Filter>Naga2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\MemPool.cpp">
+      <Filter>Naga2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Object.cpp">
+      <Filter>Naga2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\UniqueString.cpp">
+      <Filter>Naga2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Utility.cpp">
+      <Filter>Naga2D</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\StaticBackground.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\GameScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="main.h">
+      <Filter>win32</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\AppDelegate.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\BitStatus.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\InterfaceID.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Joystick.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\JoystickLayer.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\MemPool.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NagaLib.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Object.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Platform.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\RefCounted.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Singleton.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\SmartPointer.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StdInclude.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\UniqueString.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Utility.h">
+      <Filter>Naga2D</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\HelloWorldScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\StaticBackground.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Constants.h">
+      <Filter>Classes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\GameScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+  </ItemGroup>
+  <ItemGroup>
+    <ResourceCompile Include="game.rc">
+      <Filter>resource</Filter>
+    </ResourceCompile>
+  </ItemGroup>
+  <ItemGroup>
+    <Image Include="..\Resources\Joystick\dpadDown-hd.png">
+      <Filter>resource\Joystick</Filter>
+    </Image>
+    <Image Include="..\Resources\Joystick\dpadDown.png">
+      <Filter>resource\Joystick</Filter>
+    </Image>
+    <Image Include="..\Resources\Joystick\joystickDown-hd.png">
+      <Filter>resource\Joystick</Filter>
+    </Image>
+    <Image Include="..\Resources\Joystick\joystickDown.png">
+      <Filter>resource\Joystick</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling1.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling1iPhone.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling1iPhone-hd.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling2.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling2iPhone.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling2iPhone-hd.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling3.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling3iPhone.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling3iPhone-hd.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling4.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling4iPhone.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling4iPhone-hd.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\FlatScrollingLayer.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\FlatScrollingLayeriPhone.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\ParallaxBackgrounds\FlatScrollingLayeriPhone-hd.png">
+      <Filter>resource\ParallaxBackgrounds</Filter>
+    </Image>
+    <Image Include="..\Resources\TileMaps\TilesTextureAtlas.png">
+      <Filter>resource\TileMaps</Filter>
+    </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="..\Resources\TileMaps\Level2TileMap.tmx">
+      <Filter>resource\TileMaps</Filter>
+    </None>
+    <None Include="..\Resources\TileMaps\Level2TileMapiPhone.tmx">
+      <Filter>resource\TileMaps</Filter>
+    </None>
+    <None Include="..\Resources\TileMaps\Level2TileMapiPhone-hd.tmx">
+      <Filter>resource\TileMaps</Filter>
+    </None>
+  </ItemGroup>
+</Project>
