@@ -59,7 +59,6 @@ bool GameLayer::init()
     this->setAccelerometerEnabled(true);
     this->setAccelerometerInterval(0.07);
     
-    
     return true;
 }
 
@@ -67,6 +66,18 @@ bool GameLayer::init()
 void GameLayer::onAcceleration(cocos2d::Acceleration* acc, cocos2d::Event* unused_event)
 {
     cocos2d::log("%f, %f, %f", acc->x, acc->y, acc->z);
+    Point pos = m_pActor->getPosition();
+    Size visibleSize = Director::getInstance()->getVisibleSize();
+
+    pos.x += (acc->x * 150) * 1;
+    if (pos.x < 0) {
+        pos.x = 0;
+    }
+    if (pos.x > visibleSize.width) {
+        pos.x = visibleSize.width;
+    }
+
+    m_pActor->setPosition(pos);
 }
 
 void GameLayer::menuPauseCallback(Object* pSender)
