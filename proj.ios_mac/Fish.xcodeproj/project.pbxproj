@@ -18,6 +18,8 @@
 		1230881418C99A8F00453DDE /* transparentbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881318C99A8F00453DDE /* transparentbutton.png */; };
 		1230881C18C99BD100453DDE /* transparentbuttonC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881B18C99BD100453DDE /* transparentbuttonC.png */; };
 		1230881E18C9A29500453DDE /* pausebtnC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881D18C9A29500453DDE /* pausebtnC.png */; };
+		1230882318C9A43E00453DDE /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1230881F18C9A43E00453DDE /* Joystick.cpp */; };
+		1230882418C9A43E00453DDE /* JoystickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1230882118C9A43E00453DDE /* JoystickLayer.cpp */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -79,8 +81,6 @@
 		605F4B2618C8B2D3003592CD /* Utility.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605F4B1C18C8B2D3003592CD /* Utility.cpp */; };
 		605F4B2718C8B2D3003592CD /* GameScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605F4B1F18C8B2D3003592CD /* GameScene.cpp */; };
 		605F4B2818C8B2D3003592CD /* StaticBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605F4B2118C8B2D3003592CD /* StaticBackground.cpp */; };
-		605F4B3418C8B922003592CD /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605F4B2F18C8B922003592CD /* Joystick.cpp */; };
-		605F4B3518C8B922003592CD /* JoystickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 605F4B3118C8B922003592CD /* JoystickLayer.cpp */; };
 		605F4B3A18C8B99C003592CD /* fonts in Resources */ = {isa = PBXBuildFile; fileRef = 605F4B3618C8B99C003592CD /* fonts */; };
 		605F4B3B18C8B99C003592CD /* Joystick in Resources */ = {isa = PBXBuildFile; fileRef = 605F4B3718C8B99C003592CD /* Joystick */; };
 		605F4B3C18C8B99C003592CD /* ParallaxBackgrounds in Resources */ = {isa = PBXBuildFile; fileRef = 605F4B3818C8B99C003592CD /* ParallaxBackgrounds */; };
@@ -280,6 +280,10 @@
 		1230881318C99A8F00453DDE /* transparentbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbutton.png; sourceTree = "<group>"; };
 		1230881B18C99BD100453DDE /* transparentbuttonC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbuttonC.png; sourceTree = "<group>"; };
 		1230881D18C9A29500453DDE /* pausebtnC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtnC.png; sourceTree = "<group>"; };
+		1230881F18C9A43E00453DDE /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
+		1230882018C9A43E00453DDE /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
+		1230882118C9A43E00453DDE /* JoystickLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JoystickLayer.cpp; sourceTree = "<group>"; };
+		1230882218C9A43E00453DDE /* JoystickLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickLayer.h; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -346,10 +350,6 @@
 		605F4B2018C8B2D3003592CD /* GameScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GameScene.h; sourceTree = "<group>"; };
 		605F4B2118C8B2D3003592CD /* StaticBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = StaticBackground.cpp; sourceTree = "<group>"; };
 		605F4B2218C8B2D3003592CD /* StaticBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StaticBackground.h; sourceTree = "<group>"; };
-		605F4B2F18C8B922003592CD /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Joystick.cpp; path = ../Classes/Joystick.cpp; sourceTree = "<group>"; };
-		605F4B3018C8B922003592CD /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Joystick.h; path = ../Classes/Joystick.h; sourceTree = "<group>"; };
-		605F4B3118C8B922003592CD /* JoystickLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = JoystickLayer.cpp; path = ../Classes/JoystickLayer.cpp; sourceTree = "<group>"; };
-		605F4B3218C8B922003592CD /* JoystickLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = JoystickLayer.h; path = ../Classes/JoystickLayer.h; sourceTree = "<group>"; };
 		605F4B3318C8B922003592CD /* NagaAdapter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NagaAdapter.h; path = ../Classes/NagaAdapter.h; sourceTree = "<group>"; };
 		605F4B3618C8B99C003592CD /* fonts */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fonts; sourceTree = "<group>"; };
 		605F4B3718C8B99C003592CD /* Joystick */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Joystick; sourceTree = "<group>"; };
@@ -452,10 +452,6 @@
 				1AFAF8B416D35DE700DB1158 /* AppDelegate.h */,
 				1AFAF8B516D35DE700DB1158 /* HelloWorldScene.cpp */,
 				1AFAF8B616D35DE700DB1158 /* HelloWorldScene.h */,
-				605F4B2F18C8B922003592CD /* Joystick.cpp */,
-				605F4B3018C8B922003592CD /* Joystick.h */,
-				605F4B3118C8B922003592CD /* JoystickLayer.cpp */,
-				605F4B3218C8B922003592CD /* JoystickLayer.h */,
 				605F4B3318C8B922003592CD /* NagaAdapter.h */,
 			);
 			name = Classes;
@@ -601,6 +597,10 @@
 		605F4B1E18C8B2D3003592CD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				1230881F18C9A43E00453DDE /* Joystick.cpp */,
+				1230882018C9A43E00453DDE /* Joystick.h */,
+				1230882118C9A43E00453DDE /* JoystickLayer.cpp */,
+				1230882218C9A43E00453DDE /* JoystickLayer.h */,
 				605F4B1F18C8B2D3003592CD /* GameScene.cpp */,
 				605F4B2018C8B2D3003592CD /* GameScene.h */,
 				605F4B2118C8B2D3003592CD /* StaticBackground.cpp */,
@@ -876,19 +876,19 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				605F4B3518C8B922003592CD /* JoystickLayer.cpp in Sources */,
+				1230882418C9A43E00453DDE /* JoystickLayer.cpp in Sources */,
 				605F4B2718C8B2D3003592CD /* GameScene.cpp in Sources */,
 				605F4B2618C8B2D3003592CD /* Utility.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,
 				605F4B2318C8B2D3003592CD /* MemPool.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
-				605F4B3418C8B922003592CD /* Joystick.cpp in Sources */,
 				123087F318C9584900453DDE /* GameOverScene.cpp in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				605F4B2418C8B2D3003592CD /* Object.cpp in Sources */,
 				123087F918C9607E00453DDE /* MainMenuScene.cpp in Sources */,
 				605F4B2818C8B2D3003592CD /* StaticBackground.cpp in Sources */,
 				123087F618C9605C00453DDE /* PauseScene.cpp in Sources */,
+				1230882318C9A43E00453DDE /* Joystick.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 				605F4B2518C8B2D3003592CD /* UniqueString.cpp in Sources */,
