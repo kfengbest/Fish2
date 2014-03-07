@@ -12,13 +12,18 @@ AppDelegate::~AppDelegate()
 {
 }
 
-bool AppDelegate::applicationDidFinishLaunching() {
+bool AppDelegate::applicationDidFinishLaunching() 
+{
     // initialize director
     auto director = Director::getInstance();
     auto eglView = EGLView::getInstance();
 
     director->setOpenGLView(eglView);
-	
+
+    // set the design resolution to what we would expect for vertical preferences
+    eglView->setDesignResolutionSize(480,640, ResolutionPolicy::FIXED_HEIGHT);
+    // set the scale factor to fit the screen : Resource Height / Design Height
+    director->setContentScaleFactor(1136.0/640.0);
     // turn on display FPS
     director->setDisplayStats(false);
 
