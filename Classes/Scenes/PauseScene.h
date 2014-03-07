@@ -23,7 +23,11 @@ public:
     virtual ~PauseScene();
     
     bool init();
-    
+private:
+    void menuResumeCallback(Object* pSender);
+    void menuRestartCallback(Object* pSender);
+    void menuMainMenuCallback(Object* pSender);
+
 protected:
     
     cocos2d::Layer* m_pLayer;

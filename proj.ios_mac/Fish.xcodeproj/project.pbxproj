@@ -10,12 +10,14 @@
 		123087F318C9584900453DDE /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123087F118C9584900453DDE /* GameOverScene.cpp */; };
 		123087F618C9605C00453DDE /* PauseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123087F418C9605C00453DDE /* PauseScene.cpp */; };
 		123087F918C9607E00453DDE /* MainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123087F718C9607E00453DDE /* MainMenuScene.cpp */; };
-		123087FF18C96B8900453DDE /* mainmenuBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 123087FB18C96B8900453DDE /* mainmenuBtn.png */; };
 		1230880018C96B8900453DDE /* PauseScene.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 123087FC18C96B8900453DDE /* PauseScene.PNG */; };
-		1230880118C96B8900453DDE /* restartBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 123087FD18C96B8900453DDE /* restartBtn.png */; };
-		1230880218C96B8900453DDE /* resumeBtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 123087FE18C96B8900453DDE /* resumeBtn.png */; };
 		1230880518C976D300453DDE /* mainmenuscenebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230880418C976D300453DDE /* mainmenuscenebg.png */; };
 		1230880D18C97F6600453DDE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230880C18C97F6600453DDE /* Default-568h@2x.png */; };
+		1230880F18C98E9300453DDE /* MainSceneBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230880E18C98E9300453DDE /* MainSceneBG.png */; };
+		1230881118C98F8700453DDE /* pausebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881018C98F8700453DDE /* pausebtn.png */; };
+		1230881418C99A8F00453DDE /* transparentbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881318C99A8F00453DDE /* transparentbutton.png */; };
+		1230881C18C99BD100453DDE /* transparentbuttonC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881B18C99BD100453DDE /* transparentbuttonC.png */; };
+		1230881E18C9A29500453DDE /* pausebtnC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881D18C9A29500453DDE /* pausebtnC.png */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -270,12 +272,14 @@
 		123087F518C9605C00453DDE /* PauseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseScene.h; sourceTree = "<group>"; };
 		123087F718C9607E00453DDE /* MainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuScene.cpp; sourceTree = "<group>"; };
 		123087F818C9607E00453DDE /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
-		123087FB18C96B8900453DDE /* mainmenuBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenuBtn.png; sourceTree = "<group>"; };
 		123087FC18C96B8900453DDE /* PauseScene.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseScene.PNG; sourceTree = "<group>"; };
-		123087FD18C96B8900453DDE /* restartBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = restartBtn.png; sourceTree = "<group>"; };
-		123087FE18C96B8900453DDE /* resumeBtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = resumeBtn.png; sourceTree = "<group>"; };
 		1230880418C976D300453DDE /* mainmenuscenebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenuscenebg.png; sourceTree = "<group>"; };
 		1230880C18C97F6600453DDE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		1230880E18C98E9300453DDE /* MainSceneBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainSceneBG.png; sourceTree = "<group>"; };
+		1230881018C98F8700453DDE /* pausebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtn.png; sourceTree = "<group>"; };
+		1230881318C99A8F00453DDE /* transparentbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbutton.png; sourceTree = "<group>"; };
+		1230881B18C99BD100453DDE /* transparentbuttonC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbuttonC.png; sourceTree = "<group>"; };
+		1230881D18C9A29500453DDE /* pausebtnC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtnC.png; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -427,12 +431,14 @@
 		123087FA18C96B7100453DDE /* SceneUI */ = {
 			isa = PBXGroup;
 			children = (
+				1230881B18C99BD100453DDE /* transparentbuttonC.png */,
+				1230881318C99A8F00453DDE /* transparentbutton.png */,
+				1230881D18C9A29500453DDE /* pausebtnC.png */,
+				1230881018C98F8700453DDE /* pausebtn.png */,
+				1230880E18C98E9300453DDE /* MainSceneBG.png */,
 				1230880C18C97F6600453DDE /* Default-568h@2x.png */,
 				1230880418C976D300453DDE /* mainmenuscenebg.png */,
-				123087FB18C96B8900453DDE /* mainmenuBtn.png */,
 				123087FC18C96B8900453DDE /* PauseScene.PNG */,
-				123087FD18C96B8900453DDE /* restartBtn.png */,
-				123087FE18C96B8900453DDE /* resumeBtn.png */,
 			);
 			name = SceneUI;
 			sourceTree = "<group>";
@@ -818,9 +824,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1230880F18C98E9300453DDE /* MainSceneBG.png in Resources */,
+				1230881E18C9A29500453DDE /* pausebtnC.png in Resources */,
+				1230881C18C99BD100453DDE /* transparentbuttonC.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
+				1230881118C98F8700453DDE /* pausebtn.png in Resources */,
 				1230880518C976D300453DDE /* mainmenuscenebg.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
@@ -828,7 +838,6 @@
 				605F4B3C18C8B99C003592CD /* ParallaxBackgrounds in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
-				123087FF18C96B8900453DDE /* mainmenuBtn.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
@@ -836,13 +845,12 @@
 				1230880018C96B8900453DDE /* PauseScene.PNG in Resources */,
 				605F4B3B18C8B99C003592CD /* Joystick in Resources */,
 				605F4B3A18C8B99C003592CD /* fonts in Resources */,
-				1230880118C96B8900453DDE /* restartBtn.png in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
+				1230881418C99A8F00453DDE /* transparentbutton.png in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
-				1230880218C96B8900453DDE /* resumeBtn.png in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				605F4B3D18C8B99C003592CD /* TileMaps in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,

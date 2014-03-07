@@ -24,6 +24,9 @@ public:
     
     bool init();
     
+private:
+    void menuStartCallback(Object* pSender);
+
 protected:
     
     cocos2d::Layer* m_pLayer;

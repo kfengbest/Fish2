@@ -32,9 +32,29 @@ class GameLayer : public cocos2d::Layer
 public:             
     CREATE_FUNC(GameLayer);
 
+private:
+    void menuPauseCallback(Object* pSender);
+
 protected:
 
     virtual bool init() override; 
+};
+
+class GameScene
+: public cocos2d::Scene
+{
+    
+public:
+    static GameScene* create();
+    
+    GameScene();
+    virtual ~GameScene();
+    
+    bool init();
+    
+protected:
+    GameLayer* m_pLayer;
+    
 };
 
 #endif // __Game_Scene_H__
