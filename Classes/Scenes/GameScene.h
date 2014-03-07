@@ -32,12 +32,20 @@ class GameLayer : public cocos2d::Layer
 public:             
     CREATE_FUNC(GameLayer);
 
+    GameLayer();
+    virtual ~GameLayer();
+    
+    virtual void onAcceleration(cocos2d::Acceleration* acc, cocos2d::Event* unused_event);
+
 private:
     void menuPauseCallback(Object* pSender);
 
 protected:
 
-    virtual bool init() override; 
+    virtual bool init() override;
+    
+private:
+    cocos2d::Sprite* m_pActor;
 };
 
 class GameScene

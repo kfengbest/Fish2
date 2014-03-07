@@ -5,6 +5,16 @@
 
 USING_NS_CC;
 
+GameLayer::GameLayer()
+: m_pActor(nullptr)
+{
+    
+}
+
+GameLayer::~GameLayer()
+{
+}
+
 // on "init" you need to initialize your instance
 bool GameLayer::init()
 {    
@@ -26,6 +36,10 @@ bool GameLayer::init()
     // add the sprite as a child to this layer
     this->addChild(sprite, 0);
 
+    m_pActor = Sprite::create("billiard.png");
+    m_pActor->setPosition(Point(100,100));
+    m_pActor->setScale(0.5);
+    this->addChild(m_pActor, 10);
     
     // start game button.
     auto startGameBtn = MenuItemImage::create(
@@ -41,7 +55,18 @@ bool GameLayer::init()
     menu->setPosition(Point(visibleSize.width, visibleSize.height));
     this->addChild(menu, 20);
     
+    // Accelerometer
+    this->setAccelerometerEnabled(true);
+    this->setAccelerometerInterval(0.07);
+    
+    
     return true;
+}
+
+
+void GameLayer::onAcceleration(cocos2d::Acceleration* acc, cocos2d::Event* unused_event)
+{
+    cocos2d::log("%f, %f, %f", acc->x, acc->y, acc->z);
 }
 
 void GameLayer::menuPauseCallback(Object* pSender)

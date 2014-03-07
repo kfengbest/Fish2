@@ -39,7 +39,6 @@ bool PauseScene::init()
     this->addChild(m_pLayer);
     
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    Point origin = Director::getInstance()->getVisibleOrigin();
     
     auto sprite = Sprite::create("PauseScene.PNG");
     sprite->setPosition(Point(visibleSize.width/2, visibleSize.height/2));

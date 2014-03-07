@@ -43,7 +43,6 @@ bool MainMenuScene::init()
 
     // size
     Size visibleSize = Director::getInstance()->getVisibleSize();
-    Point origin = Director::getInstance()->getVisibleOrigin();
     
     // background
     auto sprite = Sprite::create("mainmenuscenebg.png");
