@@ -205,6 +205,39 @@
     <Image Include="..\Resources\TileMaps\TilesTextureAtlas.png">
       <Filter>resource\TileMaps</Filter>
     </Image>
+    <Image Include="..\Resources\CloseNormal.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\CloseSelected.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\Default-568h%402x.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\HelloWorld.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\mainmenuscenebg.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\MainSceneBG.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\pausebtn.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\pausebtnC.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\PauseScene.PNG">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\transparentbutton.png">
+      <Filter>resource</Filter>
+    </Image>
+    <Image Include="..\Resources\transparentbuttonC.png">
+      <Filter>resource</Filter>
+    </Image>
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\TileMaps\Level2TileMap.tmx">

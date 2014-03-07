@@ -189,10 +189,16 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ResourceCompile Include="game.rc" />
   </ItemGroup>
   <ItemGroup>
+    <Image Include="..\Resources\CloseNormal.png" />
+    <Image Include="..\Resources\CloseSelected.png" />
+    <Image Include="..\Resources\Default-568h%402x.png" />
+    <Image Include="..\Resources\HelloWorld.png" />
     <Image Include="..\Resources\Joystick\dpadDown-hd.png" />
     <Image Include="..\Resources\Joystick\dpadDown.png" />
     <Image Include="..\Resources\Joystick\joystickDown-hd.png" />
     <Image Include="..\Resources\Joystick\joystickDown.png" />
+    <Image Include="..\Resources\mainmenuscenebg.png" />
+    <Image Include="..\Resources\MainSceneBG.png" />
     <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling1.png" />
     <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling1iPhone-hd.png" />
     <Image Include="..\Resources\ParallaxBackgrounds\chap9_scrolling1iPhone.png" />
@@ -208,7 +214,12 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <Image Include="..\Resources\ParallaxBackgrounds\FlatScrollingLayer.png" />
     <Image Include="..\Resources\ParallaxBackgrounds\FlatScrollingLayeriPhone-hd.png" />
     <Image Include="..\Resources\ParallaxBackgrounds\FlatScrollingLayeriPhone.png" />
+    <Image Include="..\Resources\pausebtn.png" />
+    <Image Include="..\Resources\pausebtnC.png" />
+    <Image Include="..\Resources\PauseScene.PNG" />
     <Image Include="..\Resources\TileMaps\TilesTextureAtlas.png" />
+    <Image Include="..\Resources\transparentbutton.png" />
+    <Image Include="..\Resources\transparentbuttonC.png" />
   </ItemGroup>
   <ItemGroup>
     <None Include="..\Resources\TileMaps\Level2TileMap.tmx" />

@@ -14,6 +14,10 @@ int APIENTRY _tWinMain(HINSTANCE hInstance,
     // create the application instance
     AppDelegate app;
     EGLView eglView;
-    eglView.init("Fish",900,640);
+
+    /// set the screen aspect ratio to be iPhone 5/5S
+    /// the actual sizes on these machines is 640*1136, but it is too big 
+    /// for windows simulation
+    eglView.init("Fish Shot",480,480*1.775);
     return Application::getInstance()->run();
 }
