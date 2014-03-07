@@ -10,9 +10,6 @@
     <Filter Include="resource">
       <UniqueIdentifier>{715254bc-d70b-4ec5-bf29-467dd3ace079}</UniqueIdentifier>
     </Filter>
-    <Filter Include="Naga2D">
-      <UniqueIdentifier>{331d21fc-44d5-4ae7-8c9b-d89809d09480}</UniqueIdentifier>
-    </Filter>
     <Filter Include="resource\Joystick">
       <UniqueIdentifier>{28ca7fdc-bd5e-4aa8-b115-3f4a0bd63836}</UniqueIdentifier>
     </Filter>
@@ -25,6 +22,9 @@
     <Filter Include="resource\TileMaps">
       <UniqueIdentifier>{876a5efa-396f-4693-b74e-de0ee31d16b7}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Naga">
+      <UniqueIdentifier>{331d21fc-44d5-4ae7-8c9b-d89809d09480}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -33,31 +33,37 @@
     <ClCompile Include="..\Classes\AppDelegate.cpp">
       <Filter>Classes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Joystick.cpp">
-      <Filter>Naga2D</Filter>
+    <ClCompile Include="..\Classes\Naga\MemPool.cpp">
+      <Filter>Classes\Naga</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\JoystickLayer.cpp">
-      <Filter>Naga2D</Filter>
+    <ClCompile Include="..\Classes\Naga\Object.cpp">
+      <Filter>Classes\Naga</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\MemPool.cpp">
-      <Filter>Naga2D</Filter>
+    <ClCompile Include="..\Classes\Naga\UniqueString.cpp">
+      <Filter>Classes\Naga</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\Object.cpp">
-      <Filter>Naga2D</Filter>
+    <ClCompile Include="..\Classes\Naga\Utility.cpp">
+      <Filter>Classes\Naga</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\UniqueString.cpp">
-      <Filter>Naga2D</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\Utility.cpp">
-      <Filter>Naga2D</Filter>
-    </ClCompile>
-    <ClCompile Include="..\Classes\HelloWorldScene.cpp">
+    <ClCompile Include="..\Classes\Scenes\GameOverScene.cpp">
       <Filter>Classes\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\StaticBackground.cpp">
+    <ClCompile Include="..\Classes\Scenes\GameScene.cpp">
       <Filter>Classes\Scenes</Filter>
     </ClCompile>
-    <ClCompile Include="..\Classes\GameScene.cpp">
+    <ClCompile Include="..\Classes\Scenes\MainMenuScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\PauseScene.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\StaticBackground.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\JoystickLayer.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\Joystick.cpp">
       <Filter>Classes\Scenes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -68,58 +74,68 @@
     <ClInclude Include="..\Classes\AppDelegate.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\BitStatus.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\InterfaceID.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Joystick.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\JoystickLayer.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\MemPool.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\NagaLib.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Object.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Platform.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\RefCounted.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Singleton.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\SmartPointer.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\StdInclude.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\UniqueString.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\Utility.h">
-      <Filter>Naga2D</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\HelloWorldScene.h">
-      <Filter>Classes\Scenes</Filter>
-    </ClInclude>
-    <ClInclude Include="..\Classes\StaticBackground.h">
-      <Filter>Classes\Scenes</Filter>
-    </ClInclude>
     <ClInclude Include="..\Classes\Constants.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\GameScene.h">
+    <ClInclude Include="..\Classes\NagaAdapter.h" />
+    <ClInclude Include="..\Classes\Naga\BitStatus.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Constants.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\InterfaceID.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\MemPool.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\NagaLib.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Object.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Platform.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\RefCounted.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Singleton.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\SmartPointer.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\StdInclude.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\UniqueString.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Naga\Utility.h">
+      <Filter>Classes\Naga</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GameOverScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\GameScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\MainMenuScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\PauseScene.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\StaticBackground.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\JoystickLayer.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\Joystick.h">
       <Filter>Classes\Scenes</Filter>
     </ClInclude>
   </ItemGroup>
