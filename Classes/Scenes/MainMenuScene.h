@@ -26,6 +26,8 @@ public:
     
 private:
     void menuStartCallback(Object* pSender);
+    void menuAchievementCallback(Object* pSender);
+    void menuLeadboardCallback(Object* pSender);
 
 protected:
     

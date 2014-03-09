@@ -9,6 +9,8 @@
 #include "MainMenuScene.h"
 #include "GameScene.h"
 #include "PauseScene.h"
+#include "Achievement.h"
+#include "Leadboard.h"
 
 USING_NS_CC;
 
@@ -54,9 +56,24 @@ bool MainMenuScene::init()
                                            "transparentbutton.png",
                                            "transparentbutton.png",
                                            CC_CALLBACK_1(MainMenuScene::menuStartCallback, this));
+
+    // leadboard button.
+    auto leadboardGameBtn = MenuItemImage::create(
+                                              "transparentbutton.png",
+                                              "transparentbutton.png",
+                                              CC_CALLBACK_1(MainMenuScene::menuLeadboardCallback, this));
+    leadboardGameBtn->setPosition(Point(20, -80));
+    
+    // achievement button.
+    auto achievementGameBtn = MenuItemImage::create(
+                                              "transparentbutton.png",
+                                              "transparentbutton.png",
+                                              CC_CALLBACK_1(MainMenuScene::menuAchievementCallback, this));
+    achievementGameBtn->setPosition(Point(50, -160));
+
     
     // create menu, it's an autorelease object
-    auto menu = Menu::create(startGameBtn, NULL);
+    auto menu = Menu::create(startGameBtn, leadboardGameBtn, achievementGameBtn, NULL);
     menu->setPosition(Point(visibleSize.width/2, visibleSize.height/2));
     this->addChild(menu, 1);
 
@@ -68,5 +85,15 @@ void MainMenuScene::menuStartCallback(Object* pSender)
 {
     GameScene* scene = GameScene::create();
     Director::getInstance()->pushScene(scene);
+}
+
+void MainMenuScene::menuAchievementCallback(Object* pSender)
+{
+    Achievement::instance()->showAchievmentBoard();
+}
+
+void MainMenuScene::menuLeadboardCallback(Object* pSender)
+{
+    Leadboard::instance()->showLeadboard();
 }
 

@@ -24,6 +24,7 @@
 		1230882E18C9CC0600453DDE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1230882D18C9CC0600453DDE /* GameKit.framework */; };
 		1230888518CC24FF00453DDE /* NGGameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1230888418CC24FF00453DDE /* NGGameCenter.mm */; };
 		1230888918CC288800453DDE /* Achievement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1230888818CC288800453DDE /* Achievement.mm */; };
+		1230888D18CC31B000453DDE /* Leadboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1230888C18CC31B000453DDE /* Leadboard.mm */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -294,6 +295,9 @@
 		1230888418CC24FF00453DDE /* NGGameCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NGGameCenter.mm; path = ios/NGGameCenter.mm; sourceTree = SOURCE_ROOT; };
 		1230888718CC288800453DDE /* Achievement.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Achievement.h; path = ../Classes/Achievement.h; sourceTree = "<group>"; };
 		1230888818CC288800453DDE /* Achievement.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Achievement.mm; path = ../Classes/Achievement.mm; sourceTree = "<group>"; };
+		1230888A18CC318900453DDE /* GameCenterIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCenterIDs.h; path = ../Classes/GameCenterIDs.h; sourceTree = "<group>"; };
+		1230888B18CC31B000453DDE /* Leadboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leadboard.h; path = ../Classes/Leadboard.h; sourceTree = "<group>"; };
+		1230888C18CC31B000453DDE /* Leadboard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Leadboard.mm; path = ../Classes/Leadboard.mm; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -469,6 +473,9 @@
 				605F4B3318C8B922003592CD /* NagaAdapter.h */,
 				1230888718CC288800453DDE /* Achievement.h */,
 				1230888818CC288800453DDE /* Achievement.mm */,
+				1230888A18CC318900453DDE /* GameCenterIDs.h */,
+				1230888B18CC31B000453DDE /* Leadboard.h */,
+				1230888C18CC31B000453DDE /* Leadboard.mm */,
 			);
 			name = Classes;
 			path = ../classes;
@@ -895,6 +902,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1230882418C9A43E00453DDE /* JoystickLayer.cpp in Sources */,
+				1230888D18CC31B000453DDE /* Leadboard.mm in Sources */,
 				605F4B2718C8B2D3003592CD /* GameScene.cpp in Sources */,
 				605F4B2618C8B2D3003592CD /* Utility.cpp in Sources */,
 				503AE10017EB989F00D1A890 /* AppController.mm in Sources */,

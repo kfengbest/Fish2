@@ -3,6 +3,7 @@
 #import "cocos2d.h"
 #import "AppDelegate.h"
 #import "RootViewController.h"
+#import "NGGameCenter.h"
 
 @implementation AppController
 
@@ -49,6 +50,8 @@ static AppDelegate s_sharedApplication;
     
     [[UIApplication sharedApplication] setStatusBarHidden:true];
     
+    [[NGGameCenter sharedGameCenter] authenticateLocalUser];
+    
     cocos2d::Application::getInstance()->run();
     
     return YES;
@@ -67,6 +70,9 @@ static AppDelegate s_sharedApplication;
     /*
      Restart any tasks that were paused (or not yet started) while the application was inactive. If the application was previously in the background, optionally refresh the user interface.
      */
+    
+    [[NGGameCenter sharedGameCenter] authenticateLocalUser];
+    
     cocos2d::Director::getInstance()->resume();
 }
 
@@ -82,6 +88,8 @@ static AppDelegate s_sharedApplication;
     /*
      Called as part of  transition from the background to the inactive state: here you can undo many of the changes made on entering the background.
      */
+    [[NGGameCenter sharedGameCenter] authenticateLocalUser];
+
     cocos2d::Application::getInstance()->applicationWillEnterForeground();
 }
 

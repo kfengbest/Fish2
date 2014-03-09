@@ -11,14 +11,9 @@
 
 #include <vector>
 #include <map>
+#include "GameCenterIDs.h"
 
 using namespace std;
-
-typedef enum {
-    kAchievement1 = 0,
-    kAchievement2,
-    kAchievement3
-} EAchievementID;
 
 typedef vector<EAchievementID> AchievementIDVec;
 
