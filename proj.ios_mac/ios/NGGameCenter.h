@@ -9,6 +9,7 @@
 #import <Foundation/Foundation.h>
 #import <UIKit/UIKit.h>
 #import <GameKit/GameKit.h>
+#include <string>
 
 @interface NGGameCenter : NSObject <GKLeaderboardViewControllerDelegate,
                                     GKAchievementViewControllerDelegate,
