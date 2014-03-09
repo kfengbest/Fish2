@@ -21,6 +21,8 @@
 		1230882318C9A43E00453DDE /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1230881F18C9A43E00453DDE /* Joystick.cpp */; };
 		1230882418C9A43E00453DDE /* JoystickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1230882118C9A43E00453DDE /* JoystickLayer.cpp */; };
 		1230882618C9B6AC00453DDE /* billiard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230882518C9B6AC00453DDE /* billiard.png */; };
+		1230882E18C9CC0600453DDE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1230882D18C9CC0600453DDE /* GameKit.framework */; };
+		1230888518CC24FF00453DDE /* NGGameCenter.m in Sources */ = {isa = PBXBuildFile; fileRef = 1230888418CC24FF00453DDE /* NGGameCenter.m */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -286,6 +288,9 @@
 		1230882118C9A43E00453DDE /* JoystickLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JoystickLayer.cpp; sourceTree = "<group>"; };
 		1230882218C9A43E00453DDE /* JoystickLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickLayer.h; sourceTree = "<group>"; };
 		1230882518C9B6AC00453DDE /* billiard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = billiard.png; sourceTree = "<group>"; };
+		1230882D18C9CC0600453DDE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
+		1230888318CC24FF00453DDE /* NGGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGGameCenter.h; path = ios/NGGameCenter.h; sourceTree = SOURCE_ROOT; };
+		1230888418CC24FF00453DDE /* NGGameCenter.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = NGGameCenter.m; path = ios/NGGameCenter.m; sourceTree = SOURCE_ROOT; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -296,7 +301,7 @@
 		1AFAF8BA16D35E4900DB1158 /* CloseSelected.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CloseSelected.png; sourceTree = "<group>"; };
 		1AFAF8BB16D35E4900DB1158 /* HelloWorld.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HelloWorld.png; sourceTree = "<group>"; };
 		1D30AB110D05D00D00671497 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1D6058910D05DD3D006BFB54 /* Fish iOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Fish iOS.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		1D6058910D05DD3D006BFB54 /* fishshot.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = fishshot.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1DF5F4DF0D08C38300B7A737 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		288765A40DF7441C002DB57D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		503AE0F617EB97AB00D1A890 /* Icon.icns */ = {isa = PBXFileReference; lastKnownFileType = image.icns; path = Icon.icns; sourceTree = "<group>"; };
@@ -371,6 +376,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1230882E18C9CC0600453DDE /* GameKit.framework in Frameworks */,
 				1AC6FB2E180E99EB004C840B /* libbox2d iOS.a in Frameworks */,
 				1AC6FB2F180E99EB004C840B /* libchipmunk iOS.a in Frameworks */,
 				1AC6FB30180E99EB004C840B /* libcocos2dx iOS.a in Frameworks */,
@@ -418,6 +424,8 @@
 		080E96DDFE201D6D7F000001 /* ios */ = {
 			isa = PBXGroup;
 			children = (
+				1230888318CC24FF00453DDE /* NGGameCenter.h */,
+				1230888418CC24FF00453DDE /* NGGameCenter.m */,
 				5087E77117EB970100C73F5D /* Icons */,
 				503AE0FA17EB989F00D1A890 /* AppController.h */,
 				503AE0FB17EB989F00D1A890 /* AppController.mm */,
@@ -464,7 +472,7 @@
 		19C28FACFE9D520D11CA2CBB /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1D6058910D05DD3D006BFB54 /* Fish iOS.app */,
+				1D6058910D05DD3D006BFB54 /* fishshot.app */,
 				5087E76F17EB910900C73F5D /* Fish Mac.app */,
 			);
 			name = Products;
@@ -508,6 +516,7 @@
 		29B97323FDCFA39411CA2CEA /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1230882D18C9CC0600453DDE /* GameKit.framework */,
 				D6B0611A1803AB670077942B /* CoreMotion.framework */,
 				503AE11A17EB9C5A00D1A890 /* IOKit.framework */,
 				503AE11117EB99EE00D1A890 /* libcurl.dylib */,
@@ -638,9 +647,9 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1D6058900D05DD3D006BFB54 /* Fish iOS */ = {
+		1D6058900D05DD3D006BFB54 /* fishshot */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fish iOS" */;
+			buildConfigurationList = 1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "fishshot" */;
 			buildPhases = (
 				1D60588D0D05DD3D006BFB54 /* Resources */,
 				1D60588E0D05DD3D006BFB54 /* Sources */,
@@ -655,9 +664,9 @@
 				1AC6FB2B180E99E1004C840B /* PBXTargetDependency */,
 				1AC6FB2D180E99E1004C840B /* PBXTargetDependency */,
 			);
-			name = "Fish iOS";
+			name = fishshot;
 			productName = iphone;
-			productReference = 1D6058910D05DD3D006BFB54 /* Fish iOS.app */;
+			productReference = 1D6058910D05DD3D006BFB54 /* fishshot.app */;
 			productType = "com.apple.product-type.application";
 		};
 		5087E73D17EB910900C73F5D /* Fish Mac */ = {
@@ -715,7 +724,7 @@
 			);
 			projectRoot = "";
 			targets = (
-				1D6058900D05DD3D006BFB54 /* Fish iOS */,
+				1D6058900D05DD3D006BFB54 /* fishshot */,
 				5087E73D17EB910900C73F5D /* Fish Mac */,
 			);
 		};
@@ -887,6 +896,7 @@
 				605F4B2318C8B2D3003592CD /* MemPool.cpp in Sources */,
 				503AE10217EB989F00D1A890 /* RootViewController.mm in Sources */,
 				123087F318C9584900453DDE /* GameOverScene.cpp in Sources */,
+				1230888518CC24FF00453DDE /* NGGameCenter.m in Sources */,
 				1AFAF8B716D35DE700DB1158 /* AppDelegate.cpp in Sources */,
 				605F4B2418C8B2D3003592CD /* Object.cpp in Sources */,
 				123087F918C9607E00453DDE /* MainMenuScene.cpp in Sources */,
@@ -1147,7 +1157,7 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "Fish iOS" */ = {
+		1D6058960D05DD3E006BFB54 /* Build configuration list for PBXNativeTarget "fishshot" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
 				1D6058940D05DD3E006BFB54 /* Debug */,

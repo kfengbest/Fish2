@@ -50,7 +50,7 @@ static AppDelegate s_sharedApplication;
     [[UIApplication sharedApplication] setStatusBarHidden:true];
     
     cocos2d::Application::getInstance()->run();
-
+    
     return YES;
 }
 
