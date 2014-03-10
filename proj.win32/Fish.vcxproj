@@ -138,12 +138,15 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClCompile Include="..\Classes\Naga\Object.cpp" />
     <ClCompile Include="..\Classes\Naga\UniqueString.cpp" />
     <ClCompile Include="..\Classes\Naga\Utility.cpp" />
+    <ClCompile Include="..\Classes\Objects\GameObject.cpp" />
+    <ClCompile Include="..\Classes\Objects\Player.cpp" />
     <ClCompile Include="..\Classes\Scenes\GameOverScene.cpp" />
     <ClCompile Include="..\Classes\Scenes\GameScene.cpp" />
     <ClCompile Include="..\Classes\Scenes\Joystick.cpp" />
     <ClCompile Include="..\Classes\Scenes\JoystickLayer.cpp" />
     <ClCompile Include="..\Classes\Scenes\MainMenuScene.cpp" />
     <ClCompile Include="..\Classes\Scenes\PauseScene.cpp" />
+    <ClCompile Include="..\Classes\Scenes\ScrollingBackground.cpp" />
     <ClCompile Include="..\Classes\Scenes\StaticBackground.cpp" />
     <ClCompile Include="main.cpp" />
   </ItemGroup>
@@ -164,12 +167,15 @@ xcopy /Y /Q "$(EngineRoot)external\websockets\prebuilt\win32\*.*" "$(OutDir)"</C
     <ClInclude Include="..\Classes\Naga\StdInclude.h" />
     <ClInclude Include="..\Classes\Naga\UniqueString.h" />
     <ClInclude Include="..\Classes\Naga\Utility.h" />
+    <ClInclude Include="..\Classes\Objects\GameObject.h" />
+    <ClInclude Include="..\Classes\Objects\Player.h" />
     <ClInclude Include="..\Classes\Scenes\GameOverScene.h" />
     <ClInclude Include="..\Classes\Scenes\GameScene.h" />
     <ClInclude Include="..\Classes\Scenes\Joystick.h" />
     <ClInclude Include="..\Classes\Scenes\JoystickLayer.h" />
     <ClInclude Include="..\Classes\Scenes\MainMenuScene.h" />
     <ClInclude Include="..\Classes\Scenes\PauseScene.h" />
+    <ClInclude Include="..\Classes\Scenes\ScrollingBackground.h" />
     <ClInclude Include="..\Classes\Scenes\StaticBackground.h" />
     <ClInclude Include="main.h" />
   </ItemGroup>

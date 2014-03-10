@@ -5,14 +5,20 @@
 //  Created by Kaven Feng on 3/7/14.
 //
 //
-
+#include "cocos2d.h"
+#include "NagaLib.h"
+#include "NagaAdapter.h"
 #include "MainMenuScene.h"
 #include "GameScene.h"
 #include "PauseScene.h"
+
+#if PLATFORM == PLATFORM_IOS
 #include "Achievement.h"
 #include "Leadboard.h"
+#endif 
 
 USING_NS_CC;
+USING_NAGA;
 
 MainMenuScene* MainMenuScene::create()
 {
@@ -77,23 +83,26 @@ bool MainMenuScene::init()
     menu->setPosition(Point(visibleSize.width/2, visibleSize.height/2));
     this->addChild(menu, 1);
 
-    
     return true;
 }
 
 void MainMenuScene::menuStartCallback(Object* pSender)
 {
-    GameScene* scene = GameScene::create();
-    Director::getInstance()->pushScene(scene);
+    Scene* sc = GameLayer::createScene();
+    Director::getInstance()->pushScene(sc);
 }
 
 void MainMenuScene::menuAchievementCallback(Object* pSender)
 {
+#if PLATFORM == PLATFORM_IOS
     Achievement::instance()->showAchievmentBoard();
+#endif
 }
 
 void MainMenuScene::menuLeadboardCallback(Object* pSender)
 {
+#if PLATFORM == PLATFORM_IOS
     Leadboard::instance()->showLeadboard();
+#endif 
 }
 

@@ -24,6 +24,11 @@ History		:	2012, Initial implementation.
 #ifndef ___Naga_Adaptors_h__
 #define ___Naga_Adaptors_h__
 
+#include "cocos2d.h"
+#include "NagaLib.h"
+
+USING_NS_CC;
+
 NAMESPACE_NAGA_BEGIN
 
     template <typename T>
@@ -52,10 +57,10 @@ NAMESPACE_NAGA_BEGIN
             auto scene = cocos2d::Scene::create();
 
             // 'layer' is an autorelease object
-            auto layer = GameLayer::create();
+            auto layer = T::create();
 
             // add layer as a child to scene
-            scene->addChild(layer,10);
+            scene->addChild(layer);
 
             return scene;
         }

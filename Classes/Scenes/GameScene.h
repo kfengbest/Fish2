@@ -25,44 +25,86 @@
 #ifndef __Game_Scene_H__
 #define __Game_Scene_H__
 
-#include "cocos2d.h"
+/// cls forwards
+class ScrollingBackground;
 
+/// <description>
+/// Game Layer 
+/// </description>
 class GameLayer : public cocos2d::Layer
 {
-public:             
+public:
+    /// <description>
+    /// create the scene with physics world
+    /// </description>    
+    static cocos2d::Scene* createScene();    
     CREATE_FUNC(GameLayer);
 
+public:
+    /// <description>
+    /// constructors/destructor
+    /// </description>        
     GameLayer();
     virtual ~GameLayer();
     
-    virtual void onAcceleration(cocos2d::Acceleration* acc, cocos2d::Event* unused_event);
+protected:    
+    /// <description>
+    /// layer initialization
+    /// </description>
+    virtual bool init() override;
 
-private:
+    /// <description>
+    /// Event callback that is invoked every time when Node enters the 'stage'.
+    /// If the Node enters the 'stage' with a transition, this event is called when the transition starts.
+    /// During onEnter you can't access a "sister/brother" node.
+    /// If you override onEnter, you shall call its parent's one, e.g., Node::onEnter().
+    /// </description>
+    virtual void onEnter() override;
+
+    /// <description>
+    /// Update method will be called automatically every frame if "scheduleUpdate" is called, and the node is "live"
+    /// </description>
+    virtual void update(float delta) override;
+
+    /// <description>
+    /// Event callback that is invoked every time the Node leaves the 'stage'.
+    /// If the Node leaves the 'stage' with a transition, this event is called when the transition finishes.
+    /// During onExit you can't access a sibling node.
+    /// If you override onExit, you shall call its parent's one, e.g., Node::onExit().
+    /// </description>
+    virtual void onExit() override;
+        
+    /// <description>
+    /// Event callback for pause button is clicked
+    /// </description>
     void menuPauseCallback(Object* pSender);
 
-protected:
+    /// <description>
+    /// collision detection event
+    /// </description>
+    bool onContactBegin(EventCustom* event, const PhysicsContact& contact);
 
-    virtual bool init() override;
-    
 private:
-    cocos2d::Sprite* m_pActor;
-};
+    /// <description>
+    /// setup the background layer
+    /// </description>
+    bool setupBackground();
 
-class GameScene
-: public cocos2d::Scene
-{
-    
-public:
-    static GameScene* create();
-    
-    GameScene();
-    virtual ~GameScene();
-    
-    bool init();
-    
-protected:
-    GameLayer* m_pLayer;
-    
+    /// <description>
+    /// create the player 
+    /// </description>
+    bool createPlayer();
+
+    /// <description>
+    /// init the UI widgets
+    /// </description>
+    bool initUI();
+
+private:
+    /// <description>
+    /// the scrolling background
+    /// </description>
+    ScrollingBackground* mpBackground;      
 };
 
 #endif // __Game_Scene_H__

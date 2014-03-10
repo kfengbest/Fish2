@@ -25,6 +25,9 @@
     <Filter Include="Classes\Naga">
       <UniqueIdentifier>{331d21fc-44d5-4ae7-8c9b-d89809d09480}</UniqueIdentifier>
     </Filter>
+    <Filter Include="Classes\Objects">
+      <UniqueIdentifier>{f543b563-c80b-4895-b1fe-eb603dadcb54}</UniqueIdentifier>
+    </Filter>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="main.cpp">
@@ -64,6 +67,15 @@
       <Filter>Classes\Scenes</Filter>
     </ClCompile>
     <ClCompile Include="..\Classes\Scenes\Joystick.cpp">
+      <Filter>Classes\Scenes</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\GameObject.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Objects\Player.cpp">
+      <Filter>Classes\Objects</Filter>
+    </ClCompile>
+    <ClCompile Include="..\Classes\Scenes\ScrollingBackground.cpp">
       <Filter>Classes\Scenes</Filter>
     </ClCompile>
   </ItemGroup>
@@ -136,6 +148,15 @@
       <Filter>Classes\Scenes</Filter>
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\Joystick.h">
+      <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\GameObject.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Objects\Player.h">
+      <Filter>Classes\Objects</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\Scenes\ScrollingBackground.h">
       <Filter>Classes\Scenes</Filter>
     </ClInclude>
   </ItemGroup>

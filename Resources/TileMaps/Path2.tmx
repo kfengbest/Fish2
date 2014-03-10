@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<map version="1.0" orientation="orthogonal" width="20" height="36" tilewidth="32" tileheight="32">
+ <tileset firstgid="1" name="TilesTextureAtlas" tilewidth="32" tileheight="32">
+  <image source="TilesTextureAtlas.png" width="256" height="512"/>
+ </tileset>
+ <layer name="Layer1" width="20" height="36">
+  <data encoding="base64" compression="zlib">
+   eJztz7ENACAMxMAwDnSw/3CkYIN3QeGTvo2cKsZ4o9D3Zm+B93bvgPfsy9iXsS9jX8a+jH0Zuu/3f8W4eAsKTA==
+  </data>
+ </layer>
+</map>

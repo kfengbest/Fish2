@@ -1,5 +1,4 @@
 #include "AppDelegate.h"
-#include "HelloWorldScene.h"
 #include "MainMenuScene.h"
 
 USING_NS_CC;
@@ -23,7 +22,7 @@ bool AppDelegate::applicationDidFinishLaunching()
     // set the design resolution to what we would expect for vertical preferences
     eglView->setDesignResolutionSize(480,640, ResolutionPolicy::FIXED_HEIGHT);
     // set the scale factor to fit the screen : Resource Height / Design Height
-    director->setContentScaleFactor(1136.0/640.0);
+    director->setContentScaleFactor((float)(1136.0/640.0));
     // turn on display FPS
     director->setDisplayStats(false);
 
@@ -58,5 +57,4 @@ void AppDelegate::applicationWillEnterForeground() {
 
     // if you use SimpleAudioEngine, it must resume here
     // SimpleAudioEngine::sharedEngine()->resumeBackgroundMusic();
-    
 }
