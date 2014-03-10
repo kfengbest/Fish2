@@ -2,7 +2,7 @@
 #include "Cocos2D.h"
 #include "NagaAdapter.h"
 #include "ScrollingBackground.h"
-#include "Objects/Player.h"
+#include "Player.h"
 
 USING_NS_CC;
 

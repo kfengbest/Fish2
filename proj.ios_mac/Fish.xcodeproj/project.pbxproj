@@ -10,21 +10,26 @@
 		123087F318C9584900453DDE /* GameOverScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123087F118C9584900453DDE /* GameOverScene.cpp */; };
 		123087F618C9605C00453DDE /* PauseScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123087F418C9605C00453DDE /* PauseScene.cpp */; };
 		123087F918C9607E00453DDE /* MainMenuScene.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 123087F718C9607E00453DDE /* MainMenuScene.cpp */; };
-		1230880018C96B8900453DDE /* PauseScene.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 123087FC18C96B8900453DDE /* PauseScene.PNG */; };
-		1230880518C976D300453DDE /* mainmenuscenebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230880418C976D300453DDE /* mainmenuscenebg.png */; };
-		1230880D18C97F6600453DDE /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230880C18C97F6600453DDE /* Default-568h@2x.png */; };
-		1230880F18C98E9300453DDE /* MainSceneBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230880E18C98E9300453DDE /* MainSceneBG.png */; };
-		1230881118C98F8700453DDE /* pausebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881018C98F8700453DDE /* pausebtn.png */; };
-		1230881418C99A8F00453DDE /* transparentbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881318C99A8F00453DDE /* transparentbutton.png */; };
-		1230881C18C99BD100453DDE /* transparentbuttonC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881B18C99BD100453DDE /* transparentbuttonC.png */; };
-		1230881E18C9A29500453DDE /* pausebtnC.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230881D18C9A29500453DDE /* pausebtnC.png */; };
 		1230882318C9A43E00453DDE /* Joystick.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1230881F18C9A43E00453DDE /* Joystick.cpp */; };
 		1230882418C9A43E00453DDE /* JoystickLayer.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1230882118C9A43E00453DDE /* JoystickLayer.cpp */; };
-		1230882618C9B6AC00453DDE /* billiard.png in Resources */ = {isa = PBXBuildFile; fileRef = 1230882518C9B6AC00453DDE /* billiard.png */; };
 		1230882E18C9CC0600453DDE /* GameKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1230882D18C9CC0600453DDE /* GameKit.framework */; };
 		1230888518CC24FF00453DDE /* NGGameCenter.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1230888418CC24FF00453DDE /* NGGameCenter.mm */; };
 		1230888918CC288800453DDE /* Achievement.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1230888818CC288800453DDE /* Achievement.mm */; };
 		1230888D18CC31B000453DDE /* Leadboard.mm in Sources */ = {isa = PBXBuildFile; fileRef = 1230888C18CC31B000453DDE /* Leadboard.mm */; };
+		12F4810918CDB4C20027D8B8 /* ScrollingBackground.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F4810718CDB4C20027D8B8 /* ScrollingBackground.cpp */; };
+		12F4811C18CDB54C0027D8B8 /* GameObject.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F4811818CDB54C0027D8B8 /* GameObject.cpp */; };
+		12F4811D18CDB54C0027D8B8 /* Player.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 12F4811A18CDB54C0027D8B8 /* Player.cpp */; };
+		12F4814418CDB9C80027D8B8 /* TileMaps in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814218CDB9C80027D8B8 /* TileMaps */; };
+		12F4814518CDB9C80027D8B8 /* fish in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814318CDB9C80027D8B8 /* fish */; };
+		12F4814F18CDBD010027D8B8 /* pausebtnC.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814618CDBD010027D8B8 /* pausebtnC.png */; };
+		12F4815018CDBD010027D8B8 /* pausebtn.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814718CDBD010027D8B8 /* pausebtn.png */; };
+		12F4815118CDBD010027D8B8 /* mainmenuscenebg.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814818CDBD010027D8B8 /* mainmenuscenebg.png */; };
+		12F4815218CDBD010027D8B8 /* MainSceneBG.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814918CDBD010027D8B8 /* MainSceneBG.png */; };
+		12F4815318CDBD010027D8B8 /* transparentbuttonC.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814A18CDBD010027D8B8 /* transparentbuttonC.png */; };
+		12F4815418CDBD010027D8B8 /* transparentbutton.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814B18CDBD010027D8B8 /* transparentbutton.png */; };
+		12F4815518CDBD010027D8B8 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814C18CDBD010027D8B8 /* Default-568h@2x.png */; };
+		12F4815618CDBD010027D8B8 /* PauseScene.PNG in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814D18CDBD010027D8B8 /* PauseScene.PNG */; };
+		12F4815718CDBD010027D8B8 /* billiard.png in Resources */ = {isa = PBXBuildFile; fileRef = 12F4814E18CDBD010027D8B8 /* billiard.png */; };
 		1AC6FB1F180E996B004C840B /* libbox2d Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFF180E9839004C840B /* libbox2d Mac.a */; };
 		1AC6FB20180E996B004C840B /* libchipmunk Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAFD180E9839004C840B /* libchipmunk Mac.a */; };
 		1AC6FB21180E996B004C840B /* libcocos2dx Mac.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 1AC6FAF9180E9839004C840B /* libcocos2dx Mac.a */; };
@@ -277,19 +282,10 @@
 		123087F518C9605C00453DDE /* PauseScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PauseScene.h; sourceTree = "<group>"; };
 		123087F718C9607E00453DDE /* MainMenuScene.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = MainMenuScene.cpp; sourceTree = "<group>"; };
 		123087F818C9607E00453DDE /* MainMenuScene.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MainMenuScene.h; sourceTree = "<group>"; };
-		123087FC18C96B8900453DDE /* PauseScene.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseScene.PNG; sourceTree = "<group>"; };
-		1230880418C976D300453DDE /* mainmenuscenebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenuscenebg.png; sourceTree = "<group>"; };
-		1230880C18C97F6600453DDE /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		1230880E18C98E9300453DDE /* MainSceneBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainSceneBG.png; sourceTree = "<group>"; };
-		1230881018C98F8700453DDE /* pausebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtn.png; sourceTree = "<group>"; };
-		1230881318C99A8F00453DDE /* transparentbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbutton.png; sourceTree = "<group>"; };
-		1230881B18C99BD100453DDE /* transparentbuttonC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbuttonC.png; sourceTree = "<group>"; };
-		1230881D18C9A29500453DDE /* pausebtnC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtnC.png; sourceTree = "<group>"; };
 		1230881F18C9A43E00453DDE /* Joystick.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = Joystick.cpp; sourceTree = "<group>"; };
 		1230882018C9A43E00453DDE /* Joystick.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Joystick.h; sourceTree = "<group>"; };
 		1230882118C9A43E00453DDE /* JoystickLayer.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = JoystickLayer.cpp; sourceTree = "<group>"; };
 		1230882218C9A43E00453DDE /* JoystickLayer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = JoystickLayer.h; sourceTree = "<group>"; };
-		1230882518C9B6AC00453DDE /* billiard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = billiard.png; sourceTree = "<group>"; };
 		1230882D18C9CC0600453DDE /* GameKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GameKit.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.0.sdk/System/Library/Frameworks/GameKit.framework; sourceTree = DEVELOPER_DIR; };
 		1230888318CC24FF00453DDE /* NGGameCenter.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = NGGameCenter.h; path = ios/NGGameCenter.h; sourceTree = SOURCE_ROOT; };
 		1230888418CC24FF00453DDE /* NGGameCenter.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = NGGameCenter.mm; path = ios/NGGameCenter.mm; sourceTree = SOURCE_ROOT; };
@@ -298,6 +294,24 @@
 		1230888A18CC318900453DDE /* GameCenterIDs.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameCenterIDs.h; path = ../Classes/GameCenterIDs.h; sourceTree = "<group>"; };
 		1230888B18CC31B000453DDE /* Leadboard.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Leadboard.h; path = ../Classes/Leadboard.h; sourceTree = "<group>"; };
 		1230888C18CC31B000453DDE /* Leadboard.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; name = Leadboard.mm; path = ../Classes/Leadboard.mm; sourceTree = "<group>"; };
+		12F4810718CDB4C20027D8B8 /* ScrollingBackground.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = ScrollingBackground.cpp; sourceTree = "<group>"; };
+		12F4810818CDB4C20027D8B8 /* ScrollingBackground.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ScrollingBackground.h; sourceTree = "<group>"; };
+		12F4811018CDB4EE0027D8B8 /* Constants.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Constants.h; path = ../Classes/Constants.h; sourceTree = "<group>"; };
+		12F4811818CDB54C0027D8B8 /* GameObject.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = GameObject.cpp; path = ../Classes/Objects/GameObject.cpp; sourceTree = "<group>"; };
+		12F4811918CDB54C0027D8B8 /* GameObject.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = GameObject.h; path = ../Classes/Objects/GameObject.h; sourceTree = "<group>"; };
+		12F4811A18CDB54C0027D8B8 /* Player.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = Player.cpp; path = ../Classes/Objects/Player.cpp; sourceTree = "<group>"; };
+		12F4811B18CDB54C0027D8B8 /* Player.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Player.h; path = ../Classes/Objects/Player.h; sourceTree = "<group>"; };
+		12F4814218CDB9C80027D8B8 /* TileMaps */ = {isa = PBXFileReference; lastKnownFileType = folder; path = TileMaps; sourceTree = "<group>"; };
+		12F4814318CDB9C80027D8B8 /* fish */ = {isa = PBXFileReference; lastKnownFileType = folder; path = fish; sourceTree = "<group>"; };
+		12F4814618CDBD010027D8B8 /* pausebtnC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtnC.png; sourceTree = "<group>"; };
+		12F4814718CDBD010027D8B8 /* pausebtn.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = pausebtn.png; sourceTree = "<group>"; };
+		12F4814818CDBD010027D8B8 /* mainmenuscenebg.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = mainmenuscenebg.png; sourceTree = "<group>"; };
+		12F4814918CDBD010027D8B8 /* MainSceneBG.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = MainSceneBG.png; sourceTree = "<group>"; };
+		12F4814A18CDBD010027D8B8 /* transparentbuttonC.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbuttonC.png; sourceTree = "<group>"; };
+		12F4814B18CDBD010027D8B8 /* transparentbutton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = transparentbutton.png; sourceTree = "<group>"; };
+		12F4814C18CDBD010027D8B8 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		12F4814D18CDBD010027D8B8 /* PauseScene.PNG */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PauseScene.PNG; sourceTree = "<group>"; };
+		12F4814E18CDBD010027D8B8 /* billiard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = billiard.png; sourceTree = "<group>"; };
 		1AC6FAE5180E9839004C840B /* cocos2d_libs.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = cocos2d_libs.xcodeproj; path = ../cocos2d/build/cocos2d_libs.xcodeproj; sourceTree = "<group>"; };
 		1ACB3243164770DE00914215 /* libcurl.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcurl.a; path = ../../cocos2dx/platform/third_party/ios/libraries/libcurl.a; sourceTree = "<group>"; };
 		1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = AppDelegate.cpp; path = ../Classes/AppDelegate.cpp; sourceTree = "<group>"; };
@@ -445,25 +459,22 @@
 			path = Classes;
 			sourceTree = "<group>";
 		};
-		123087FA18C96B7100453DDE /* SceneUI */ = {
+		12F4811E18CDB5510027D8B8 /* Objects */ = {
 			isa = PBXGroup;
 			children = (
-				1230882518C9B6AC00453DDE /* billiard.png */,
-				1230881B18C99BD100453DDE /* transparentbuttonC.png */,
-				1230881318C99A8F00453DDE /* transparentbutton.png */,
-				1230881D18C9A29500453DDE /* pausebtnC.png */,
-				1230881018C98F8700453DDE /* pausebtn.png */,
-				1230880E18C98E9300453DDE /* MainSceneBG.png */,
-				1230880C18C97F6600453DDE /* Default-568h@2x.png */,
-				1230880418C976D300453DDE /* mainmenuscenebg.png */,
-				123087FC18C96B8900453DDE /* PauseScene.PNG */,
+				12F4811818CDB54C0027D8B8 /* GameObject.cpp */,
+				12F4811918CDB54C0027D8B8 /* GameObject.h */,
+				12F4811A18CDB54C0027D8B8 /* Player.cpp */,
+				12F4811B18CDB54C0027D8B8 /* Player.h */,
 			);
-			name = SceneUI;
+			name = Objects;
 			sourceTree = "<group>";
 		};
 		15AA9C4015B7EC450033D6C2 /* Classes */ = {
 			isa = PBXGroup;
 			children = (
+				12F4811E18CDB5510027D8B8 /* Objects */,
+				12F4811018CDB4EE0027D8B8 /* Constants.h */,
 				605F4B0C18C8B2D3003592CD /* Naga */,
 				605F4B1E18C8B2D3003592CD /* Scenes */,
 				1AFAF8B316D35DE700DB1158 /* AppDelegate.cpp */,
@@ -621,6 +632,8 @@
 		605F4B1E18C8B2D3003592CD /* Scenes */ = {
 			isa = PBXGroup;
 			children = (
+				12F4810718CDB4C20027D8B8 /* ScrollingBackground.cpp */,
+				12F4810818CDB4C20027D8B8 /* ScrollingBackground.h */,
 				1230881F18C9A43E00453DDE /* Joystick.cpp */,
 				1230882018C9A43E00453DDE /* Joystick.h */,
 				1230882118C9A43E00453DDE /* JoystickLayer.cpp */,
@@ -643,7 +656,17 @@
 		78C7DDAA14EBA5050085D0C2 /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				123087FA18C96B7100453DDE /* SceneUI */,
+				12F4814618CDBD010027D8B8 /* pausebtnC.png */,
+				12F4814718CDBD010027D8B8 /* pausebtn.png */,
+				12F4814818CDBD010027D8B8 /* mainmenuscenebg.png */,
+				12F4814918CDBD010027D8B8 /* MainSceneBG.png */,
+				12F4814A18CDBD010027D8B8 /* transparentbuttonC.png */,
+				12F4814B18CDBD010027D8B8 /* transparentbutton.png */,
+				12F4814C18CDBD010027D8B8 /* Default-568h@2x.png */,
+				12F4814D18CDBD010027D8B8 /* PauseScene.PNG */,
+				12F4814E18CDBD010027D8B8 /* billiard.png */,
+				12F4814218CDB9C80027D8B8 /* TileMaps */,
+				12F4814318CDB9C80027D8B8 /* fish */,
 				605F4B3618C8B99C003592CD /* fonts */,
 				605F4B3718C8B99C003592CD /* Joystick */,
 				605F4B3818C8B99C003592CD /* ParallaxBackgrounds */,
@@ -848,34 +871,36 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1230880F18C98E9300453DDE /* MainSceneBG.png in Resources */,
-				1230881E18C9A29500453DDE /* pausebtnC.png in Resources */,
-				1230882618C9B6AC00453DDE /* billiard.png in Resources */,
-				1230881C18C99BD100453DDE /* transparentbuttonC.png in Resources */,
 				5087E78117EB970100C73F5D /* Icon-120.png in Resources */,
 				5087E78617EB970100C73F5D /* Icon-76.png in Resources */,
 				5087E77F17EB970100C73F5D /* Default@2x.png in Resources */,
-				1230881118C98F8700453DDE /* pausebtn.png in Resources */,
-				1230880518C976D300453DDE /* mainmenuscenebg.png in Resources */,
+				12F4815118CDBD010027D8B8 /* mainmenuscenebg.png in Resources */,
 				50EF629917ECD46A001EB2F8 /* Icon-100.png in Resources */,
 				1AFAF8BC16D35E4900DB1158 /* CloseNormal.png in Resources */,
-				1230880D18C97F6600453DDE /* Default-568h@2x.png in Resources */,
 				605F4B3C18C8B99C003592CD /* ParallaxBackgrounds in Resources */,
+				12F4815218CDBD010027D8B8 /* MainSceneBG.png in Resources */,
+				12F4815418CDBD010027D8B8 /* transparentbutton.png in Resources */,
+				12F4815618CDBD010027D8B8 /* PauseScene.PNG in Resources */,
 				5087E78317EB970100C73F5D /* Icon-152.png in Resources */,
 				5087E77D17EB970100C73F5D /* Default-568h@2x.png in Resources */,
 				5087E78517EB970100C73F5D /* Icon-72.png in Resources */,
 				1AFAF8BD16D35E4900DB1158 /* CloseSelected.png in Resources */,
+				12F4815518CDBD010027D8B8 /* Default-568h@2x.png in Resources */,
 				50EF62A317ECD613001EB2F8 /* Icon-50.png in Resources */,
+				12F4814F18CDBD010027D8B8 /* pausebtnC.png in Resources */,
 				5087E78017EB970100C73F5D /* Icon-114.png in Resources */,
-				1230880018C96B8900453DDE /* PauseScene.PNG in Resources */,
+				12F4815018CDBD010027D8B8 /* pausebtn.png in Resources */,
 				605F4B3B18C8B99C003592CD /* Joystick in Resources */,
 				605F4B3A18C8B99C003592CD /* fonts in Resources */,
 				1AFAF8BE16D35E4900DB1158 /* HelloWorld.png in Resources */,
-				1230881418C99A8F00453DDE /* transparentbutton.png in Resources */,
+				12F4814418CDB9C80027D8B8 /* TileMaps in Resources */,
 				50EF62A217ECD613001EB2F8 /* Icon-29.png in Resources */,
 				50EF629617ECD46A001EB2F8 /* Icon-40.png in Resources */,
+				12F4815318CDBD010027D8B8 /* transparentbuttonC.png in Resources */,
+				12F4815718CDBD010027D8B8 /* billiard.png in Resources */,
 				5087E78217EB970100C73F5D /* Icon-144.png in Resources */,
 				50EF629817ECD46A001EB2F8 /* Icon-80.png in Resources */,
+				12F4814518CDB9C80027D8B8 /* fish in Resources */,
 				5087E78417EB970100C73F5D /* Icon-57.png in Resources */,
 				605F4B3D18C8B99C003592CD /* TileMaps in Resources */,
 				5087E77E17EB970100C73F5D /* Default.png in Resources */,
@@ -902,6 +927,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1230882418C9A43E00453DDE /* JoystickLayer.cpp in Sources */,
+				12F4810918CDB4C20027D8B8 /* ScrollingBackground.cpp in Sources */,
 				1230888D18CC31B000453DDE /* Leadboard.mm in Sources */,
 				605F4B2718C8B2D3003592CD /* GameScene.cpp in Sources */,
 				605F4B2618C8B2D3003592CD /* Utility.cpp in Sources */,
@@ -916,10 +942,12 @@
 				605F4B2818C8B2D3003592CD /* StaticBackground.cpp in Sources */,
 				123087F618C9605C00453DDE /* PauseScene.cpp in Sources */,
 				1230888918CC288800453DDE /* Achievement.mm in Sources */,
+				12F4811D18CDB54C0027D8B8 /* Player.cpp in Sources */,
 				1230882318C9A43E00453DDE /* Joystick.cpp in Sources */,
 				503AE10117EB989F00D1A890 /* main.m in Sources */,
 				1AFAF8B816D35DE700DB1158 /* HelloWorldScene.cpp in Sources */,
 				605F4B2518C8B2D3003592CD /* UniqueString.cpp in Sources */,
+				12F4811C18CDB54C0027D8B8 /* GameObject.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
