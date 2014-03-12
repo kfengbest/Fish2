@@ -78,6 +78,7 @@ bool Player::init()
     mSprite = Sprite::createWithSpriteFrame(sf);
     auto body = PhysicsBody::create();
     body->createBox(mSprite->getContentSize());
+    body->setVelocity(Vect(0,40));
     mSprite->setPhysicsBody(body);
 
     auto anim = Animation::create();
@@ -94,8 +95,9 @@ bool Player::init()
     Animate* an = Animate::create(anim);
     mSprite->runAction(RepeatForever::create(an));
 
+    mSprite->setAnchorPoint(Point(0.5f,0.5f));
+    mSprite->setPosition(0.f,0.f);
     this->addChild(mSprite);
-    
     return true;
 }
 
@@ -112,7 +114,7 @@ PhysicsBody* Player::getPhysicsBody()
 /// </description>   
 float Player::getVelocity()
 {
-    return mVelocity;
+    return mSprite->getPhysicsBody()->getVelocity().y;
 }
 
 /// <description>
@@ -120,7 +122,7 @@ float Player::getVelocity()
 /// </description>   
 void Player::setVelocity(float v)
 {
-    mVelocity = v;   
+    return mSprite->getPhysicsBody()->setVelocity(Vect(0,v));
 }
 
 /// <description>
@@ -141,8 +143,11 @@ void Player::onAcceleration(cocos2d::Acceleration* acc, cocos2d::Event* unused_e
     }
     
     mSprite->setPosition(pos);
+    /// enable it when needed
+//     Vect veloc = mSprite->getPhysicsBody()->getVelocity();
+//     float angle= atan2(veloc.x,veloc.y);
+//     mSprite->setRotation(-angle);
 }
-
 
 /// <description>
 /// Event callback that is invoked every time when Node enters the 'stage'.

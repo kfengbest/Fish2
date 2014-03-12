@@ -119,10 +119,8 @@ bool GameLayer::createPlayer()
         return false;
 
     Size sz  = Director::getInstance()->getVisibleSize();
-    Point org= Director::getInstance()->getVisibleOrigin();
-    player->setPosition(Point(sz.width/2 + org.x, sz.height/3 + org.y));
-    player->setVisible(true);
-    this->addChild(player, DEPTH_GAME_LAYER, TAG_PLAYER);
+    Point org= Director::getInstance()->getVisibleOrigin();    
+    mpBackground->addChild(player, DEPTH_GAME_LAYER, TAG_PLAYER);
 
     return true;
 }

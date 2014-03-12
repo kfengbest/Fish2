@@ -119,23 +119,19 @@ void ScrollingBackground::update(float delta)
     
     Player* player = Player::InstancePtr();
     // if not in correct status 
-    if (!player)    
+    if (!player)  {   
         return;
-
-    float velocity = player->getVelocity();
-    float dist = velocity * delta;
-    {
-        Point pos = mBackground1->getPosition();
-        mBackground1->setPosition(Point(pos.x, pos.y - dist));
-
-        pos = mBackground2->getPosition();
-        mBackground2->setPosition(Point(pos.x, pos.y - dist));
-    }    
+    }
+       
+    float dist = player->getPhysicsBody()->getPosition().y;
+    Point pos  = this->getPosition();
+    float offset = sz.height/3 - dist;
+    this->setPosition(pos.x,offset);
 
     /// if the current stage is out of screen, set it to correct position
-    Point pos = mBackground1->getPosition();
-    Size sz1 = mBackground1->getContentSize();
-    if (pos.y <= -sz1.height)
+    pos = mBackground1->getPosition();
+    Size sz1 = mBackground1->getContentSize();    
+    if ((pos.y + offset)<= -(sz1.height)/2)
     {
         Size  sz2 = mBackground2->getContentSize();        
         Point pos2= mBackground2->getPosition();
