@@ -56,5 +56,6 @@
 #include <unordered_map>
 #include <unordered_set>
 #include <tuple>
+#include <random>
 
 #endif // __Naga_StdInclude_h__

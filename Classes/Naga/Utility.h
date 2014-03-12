@@ -101,6 +101,55 @@ void NAGAAPI DebugPrintf(const char* fmt, ...);
 void NAGAAPI DebugPrintf(const UTxString& info);
 void NAGAAPI Warning(const char*fmt, ...);
 
+namespace detail 
+{
+    template <typename _Ty, typename = void>
+    struct random_traits{ };
+
+    template <typename _Ty> 
+    struct random_traits<_Ty, 
+        typename std::enable_if<std::is_integral<_Ty>::value>::type>
+        {
+            typedef std::mt19937 engine_type;
+            typedef std::uniform_int_distribution<_Ty> distribution_type;
+            typedef typename distribution_type::result_type result_type;
+
+            static inline /*const_expr*/ result_type Min() { return 0; }
+            static inline /*const_expr*/ result_type Max() { return 9; }
+        };
+    
+    template <typename _Ty> 
+        struct random_traits<_Ty, 
+            typename std::enable_if<std::is_floating_point<_Ty>::value>::type>
+        {
+            typedef std::mt19937 engine_type;
+            typedef std::uniform_real_distribution<_Ty> distribution_type;
+            typedef typename distribution_type::result_type result_type;
+
+            static inline /*const_expr*/ result_type Min() { return 0.0f; }
+            static inline /*const_expr*/ result_type Max() { return 1.0f; }
+        };
+};
+
+template <typename _Ty>
+    class randomizer 
+    {       
+        typedef detail::random_traits<_Ty> Traits;
+        typedef typename Traits::result_type result_type;
+        typedef typename Traits::distribution_type distribution_type;
+        typedef typename Traits::engine_type engine_type;
+
+        engine_type engine;
+        distribution_type dist;
+    public:
+        randomizer(_Ty m=Traits::Min(), _Ty n=Traits::Max()) 
+            : engine(std::random_device()()), dist(m,n){}
+
+        inline result_type operator() () {
+            return dist(engine);
+        }
+    };
+
 NAMESPACE_NAGA_END
 
 #endif // __Naga_Utility_H__

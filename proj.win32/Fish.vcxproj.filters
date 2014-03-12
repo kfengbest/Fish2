@@ -89,7 +89,6 @@
     <ClInclude Include="..\Classes\Constants.h">
       <Filter>Classes</Filter>
     </ClInclude>
-    <ClInclude Include="..\Classes\NagaAdapter.h" />
     <ClInclude Include="..\Classes\Naga\BitStatus.h">
       <Filter>Classes\Naga</Filter>
     </ClInclude>
@@ -158,6 +157,9 @@
     </ClInclude>
     <ClInclude Include="..\Classes\Scenes\ScrollingBackground.h">
       <Filter>Classes\Scenes</Filter>
+    </ClInclude>
+    <ClInclude Include="..\Classes\NagaAdapter.h">
+      <Filter>Classes</Filter>
     </ClInclude>
   </ItemGroup>
   <ItemGroup>
